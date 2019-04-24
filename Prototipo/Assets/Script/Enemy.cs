@@ -24,12 +24,10 @@ public class Enemy : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-    }
 
-    private void OnCollisionEnter(Collision2D col)
-    {
         if (col.gameObject.name == "Spike")
         {
+            Destroy(col.gameObject);
             Destroy(gameObject);
         }
     }
