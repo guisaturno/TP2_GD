@@ -39,9 +39,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4673516295894296}
   - component: {fileID: 50662308964544258}
+  - component: {fileID: 70868735891016826}
   m_Layer: 0
   m_Name: Spike
-  m_TagString: Untagged
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1903777130413532}
   m_LocalRotation: {x: -0, y: -0, z: -0.92485696, w: 0.38031524}
-  m_LocalPosition: {x: -7.498, y: 0.99, z: 0}
+  m_LocalPosition: {x: -5.0266557, y: 0.07265568, z: 0}
   m_LocalScale: {x: 0.7186521, y: 0.7186521, z: 0.7186518}
   m_Children:
   - {fileID: 4892737080352074}
@@ -67,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1828880258460060}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.01, y: 11.61, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4673516295894296}
@@ -104,10 +105,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1
+  m_Mass: 0.010395561
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.3
+  m_GravityScale: 1.01
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -143,6 +144,21 @@ PolygonCollider2D:
       - {x: 0.45535326, y: -0.4103775}
       - {x: 0.44947147, y: -0.4125948}
       - {x: 0.4480915, y: 0.4433651}
+--- !u!70 &70868735891016826
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1903777130413532}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.0001, y: 0.16}
+  m_Direction: 1
 --- !u!114 &114026920022033378
 MonoBehaviour:
   m_ObjectHideFlags: 1

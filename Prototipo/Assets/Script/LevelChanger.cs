@@ -10,7 +10,7 @@ public class LevelChanger : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("n"))
+        if (Input.GetKeyDown("p"))
         {
             FadeToNextLevel();
         }

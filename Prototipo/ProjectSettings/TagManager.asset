@@ -10,6 +10,7 @@ TagManager:
   - White
   - Projectile
   - PlayerProjectile
+  - Spike
   layers:
   - Default
   - TransparentFX

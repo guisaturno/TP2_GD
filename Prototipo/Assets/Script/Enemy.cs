@@ -20,12 +20,12 @@ public class Enemy : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.name == "Ball")
+        if (col.gameObject.CompareTag("White"))
         {
             Destroy(gameObject);
         }
 
-        if (col.gameObject.name == "Spike")
+        if (col.gameObject.CompareTag("Spike"))
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
